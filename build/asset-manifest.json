@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "./static/css/main.976597b2.chunk.css",
+    "main.js": "./static/js/main.d079a41c.chunk.js",
+    "main.js.map": "./static/js/main.d079a41c.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.e0a3968b.js",
+    "runtime-main.js.map": "./static/js/runtime-main.e0a3968b.js.map",
+    "static/js/2.d2cdec21.chunk.js": "./static/js/2.d2cdec21.chunk.js",
+    "static/js/2.d2cdec21.chunk.js.map": "./static/js/2.d2cdec21.chunk.js.map",
+    "static/js/3.e5f6f7db.chunk.js": "./static/js/3.e5f6f7db.chunk.js",
+    "static/js/3.e5f6f7db.chunk.js.map": "./static/js/3.e5f6f7db.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.976597b2.chunk.css.map": "./static/css/main.976597b2.chunk.css.map",
+    "static/js/2.d2cdec21.chunk.js.LICENSE.txt": "./static/js/2.d2cdec21.chunk.js.LICENSE.txt",
+    "static/media/balloon.997afe13.png": "./static/media/balloon.997afe13.png",
+    "static/media/hamster-cute1.7ea69e1d.gif": "./static/media/hamster-cute1.7ea69e1d.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e0a3968b.js",
+    "static/js/2.d2cdec21.chunk.js",
+    "static/css/main.976597b2.chunk.css",
+    "static/js/main.d079a41c.chunk.js"
+  ]
+}

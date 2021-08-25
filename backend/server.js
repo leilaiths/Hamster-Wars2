@@ -1,33 +1,21 @@
-//heroku uses process.env.PORT
+const PORT = 1378
 const express = require('express')
-const app = express();
+const app = express()
+
 const cors = require('cors')
 const path = require('path')
-
-//Heroku uses process.env.PORT
-const PORT = process.env.PORT || 1378
-
-const buildFolder = path.join(__dirname, '../build')
-
-//TODO serve the fronend files from the build folder
-
 const hamstrar = require('./routes/hamstrar.js')
+
+
 // Middleware som loggar information om inkomande request
+app.use(cors() )
+app.use (express.json() )
+
+
 app.use((req, res, next) =>{
     console.log(`${req.method}  ${req.url}`, req.params);
     next()
 })
-
-
-
-app.use (express.json() )
-app.use(cors() )
-app.use (express.static(buildFolder) )
-
-// Routes
-
-
-
 
 
 const staticFolder = path.join(__dirname, 'static')
@@ -57,12 +45,6 @@ app.get('/static', (req,res) => {
 //variabeln var man befinner sig fram till
 
 
-// Måste vara sist för att fånga övriga resultat
-app.get('*', (req, res) => {
-	 res.sendFile(path.join(__dirname, 'build/index.html'))
-	
-	});
-	
 
 //REST API för hamstrar
 app.use('/hamsters', hamstrar)

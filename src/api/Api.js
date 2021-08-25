@@ -1,4 +1,0 @@
-
-
-//installera axios 
-//fetch data
