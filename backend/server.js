@@ -24,11 +24,6 @@ app.use( express.static(staticFolder))
 //app.use( express.static(path.join(__dirname, 'static'))
 
 
-
-
-
-
-
 //Hämtar root filen(/) så att den kan visas i porten
 //GET registrerar en Route
 app.get('/', (req, res) => {
