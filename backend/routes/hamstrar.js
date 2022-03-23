@@ -20,6 +20,7 @@ router.get('/', async (req, res) => {
 
     const hamstrarRef = db.collection('Hamstrar');
     const snapshot = await hamstrarRef.get();
+	console.log('hämtarallahamstrar')
        
     if (snapshot.empty) {
         res.sendStatus(404)
@@ -77,15 +78,34 @@ router.get('/:id', async (req, res) =>{
   }
 })
 
-//POST
-router.post('/', async (req, res) => {
-const hamster = req.body
-// utan att ange id
-const docRef = await db.collection('Hamstrar').add(hamster)
-console.log('The document id is:' + docRef.id)
+// //POST
+// router.post('/', async (req, res) => {
+// const hamster = req.body
+// console.log('hejsan hej')
+// // utan att ange id
+// const docRef = await db.collection('Hamstrar').add(hamster)
+// console.log('hejsan hej2')
+// console.log('The document id is:' + docRef.id)
 
-res.status(200).send({id:docRef.id})
+// res.status(200).send({id:docRef.id})
 
+// })
+router.post('/', async (req, res) =>{
+    try {
+        const object = req.body;
+
+        if(!object){
+            res.sendStatus(400);
+            return;
+        }
+        const docRef = await db.collection('Hamstrar').add(object);
+        let hamsterId = {
+                id: docRef.id
+        }
+        res.status(200).send(hamsterId);
+    } catch (error) {
+        res.status(500).send(error.message);  
+    }
 })
 
 //PUT
