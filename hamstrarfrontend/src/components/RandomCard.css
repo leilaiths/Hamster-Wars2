@@ -1,0 +1,23 @@
+.hamsterbox{
+	width: 100%;
+	height: 100vh;
+	white-space: nowrap;
+	/* overflow: hidden; */
+
+}
+.firsthamster{
+	height: 100%;
+	width: 50%;
+	overflow: hidden;
+	position: relative;
+	float: left;
+}
+.secondhamster{
+	height: 100%;
+	width: 50%;
+	overflow: hidden;
+	position: relative;
+	float: right;
+	
+}
+

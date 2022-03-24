@@ -1,0 +1,72 @@
+.stats-container{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-rows: 80% 1fr;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    font-family: 'Mali Bold';
+    text-transform: uppercase;
+    /* background-color:#f3a6d0; */
+    border-radius: 0.2em;
+}
+.hamster1-stats{
+    font-display: flex;
+    grid-column: 1/2;
+    flex-direction: column;
+    padding: 0.5em;
+    max-height: 30em;
+    max-width: 30em;
+}
+.hamster2-stats{
+    font-display: flex;
+    grid-column: 2/3;
+    flex-direction: column;
+    padding: 0.5em;
+    max-height: 30em;
+    max-width: 30em;
+}
+.next-battle{
+    display: flex;
+    grid-column: 1/4;
+    grid-row:2/3 ;
+    height: 4em;
+    width: 16em;
+    border-radius: 0.3em;
+    border: none;
+    background-color: #e9a5e0;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Mali Bold';
+    font-size: 24px + 2vmin;
+    transition: all 0.7s;
+    text-transform: uppercase;
+    margin-top: 2em;
+    color:#131213;
+	margin-top: -20rem;
+	margin-left: 10rem;
+
+}
+.next-battle:hover{
+    cursor: pointer;
+    transition: all 0.7s;
+    font-size:medium;
+    background-color: #e218a5;
+}
+.stats-container h2{
+    text-decoration: underline;
+}
+.stats-container img{
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: contain;
+}
+.stats-container .stats-image{
+    display: flex;
+    max-height: 15em;
+    max-width: 25em;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.2em;
+}
