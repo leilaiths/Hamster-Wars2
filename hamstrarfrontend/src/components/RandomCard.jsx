@@ -136,7 +136,7 @@ function RandomCard({ firstrandomhamstrar, secondrandomhamstrar }) {
               <p>{secondrandomhamstrar.name}</p>
               <button
                 className="SecondBtn"
-                onClick={() => setWinnerHamster(2)}
+                onClick={() => setWinnerHamster(1)}
                 disabled={showStats === true}
               >
                 <h4> {secondrandomhamstrar.name} is Cuter</h4>

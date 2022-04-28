@@ -1,4 +1,4 @@
-// import './HamsterAndOpponent.css'
+
 const OpponentHamster = ({opponentHamster}) => {
     return(
         <div>

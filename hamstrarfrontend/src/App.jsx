@@ -11,7 +11,7 @@ import Api from './api/Api';
 import RandomCard from './components/RandomCard';
 import BattleStatus from './components/createNewHamster/BattleStatus';
 import BattleHamster from './components/createNewHamster/BattleHamster';
-import OpponentHamster from './components/createNewHamster/OpponentHamster';
+
 
 // data till alla funktioner
 function App() {
@@ -79,12 +79,6 @@ console.log(hamstrar)
 			<Route path='/BattleHamster' exact>
 			<BattleHamster hamstrar={hamstrar} changeReload={changeReload}/>	
 			</Route>
-
-			<Route path='/OpponentHamster' exact>
-			<OpponentHamster hamstrar={hamstrar} changeReload={changeReload}/>	
-			</Route>
-
-		
 
 	</Switch>
 	</div>

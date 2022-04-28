@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import './BattleStatus.css'
 
 
-const BattleStatus = ({ battleHamster, opponentHamster, nextBattle }) => {
+const BattleStatus = ({ battleHamster, opponentHamster}) => {
   const [winnerHamester, setWinnderHamster] = useState([]);
   useEffect(() => {
     async function get() {
