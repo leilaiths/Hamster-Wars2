@@ -101,7 +101,6 @@ function RandomCard({ firstrandomhamstrar, secondrandomhamstrar }) {
       <div className="battle-container">
         {showStats ? (
           <div className="wins-losses">
-            ABC
             <BattleStatus
               battleHamster={firstrandomhamstrar}
               opponentHamster={secondrandomhamstrar}
